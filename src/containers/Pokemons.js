@@ -26,8 +26,7 @@ export default class Pokemons extends Component {
         {({ loading, error, data }) => {
           if (loading) return <Spinner />;
           if (error) return <Error error={error} />;
-          // return <PokemonList pokemons={data.pokemons} />;
-          return <Spinner />;
+          return <PokemonList pokemons={data.pokemons} />;
         }}
       </Query>
     );
